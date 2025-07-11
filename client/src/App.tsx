@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
@@ -11,13 +11,13 @@ const App: React.FC = () => {
     return (
         <Router>
             <Navbar />
-            <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/product" component={ProductPage} />
-                <Route path="/cart" component={CartPage} />
-                <Route path="/checkout" component={CheckoutPage} />
-                <Route path="/order" component={OrderPage} />
-            </Switch>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/products" element={<ProductPage />} />
+                <Route path="/cart" element={<CartPage />} />
+                <Route path="/checkout" element={<CheckoutPage />} />
+                <Route path="/order" element={<OrderPage />} />
+            </Routes>
         </Router>
     );
 };
