@@ -1,12 +1,10 @@
 package com.quickcloth.models;
 
-import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Data
 @Document(collection = "orders")
 public class Order {
     @Id
@@ -15,6 +13,22 @@ public class Order {
     private List<Cart> items;
     private String status;
     private String paymentId;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getPaymentId() {
+        return paymentId;
+    }
+
+    public void setPaymentId(String paymentId) {
+        this.paymentId = paymentId;
+    }
 
     // Explicit getters and setters to resolve missing method errors
     public String getUserId() {
@@ -31,5 +45,13 @@ public class Order {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public List<Cart> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Cart> items) {
+        this.items = items;
     }
 }

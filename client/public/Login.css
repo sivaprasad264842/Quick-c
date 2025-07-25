@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+      display: block;
+      margin: 0 auto; 
+      position: absolute; 
+      top: -10%; 
+      left: 50.1%;
+      transform: translateX(-50%);
+      
+    }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+.login-box {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border: 2px solid rgba(255,255,255,.5);
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    height: 30px;
+    margin: 40px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -15px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 8px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1px;
+}
+
+.remember-forgot {
+    margin: -15px 0 15px;
+    width: 310px; /* Match input-box width */
+    font-size: 1em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+button {
+    width: 310px;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 500;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.register-link p {
+    color: #fff;
+    
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: underline;
+    font: bold;
+    
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
