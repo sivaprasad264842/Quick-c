@@ -12,4 +12,13 @@ public class Cart {
     private String name;
     private double price;
     private int quantity;
+
+    // Explicit getters and setters to resolve missing method errors
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }

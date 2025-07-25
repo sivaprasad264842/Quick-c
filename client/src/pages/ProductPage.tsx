@@ -4,7 +4,7 @@ import { getProducts, addToCart } from '../services/api';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper';
+import { Navigation } from 'swiper/modules'; // Correct
 
 const ProductPage: React.FC = () => {
     const { data: products, isLoading } = useQuery(['products'], getProducts);

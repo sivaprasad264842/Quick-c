@@ -15,4 +15,21 @@ public class Order {
     private List<Cart> items;
     private String status;
     private String paymentId;
+
+    // Explicit getters and setters to resolve missing method errors
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@stomp/stompjs": "^7.1.1",
+    "@tanstack/react-query": "^5.83.0",
+    "axios": "^1.10.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "swiper": "^11.2.10",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6"
+  }
+}
