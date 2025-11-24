@@ -1,4 +1,3 @@
 # Quick-C 
 QuickC – Full-Stack E-Commerce Platform with Secure Authentication
-A modern, responsive clothing e-commerce web application built with React (TypeScript), Tailwind CSS, and TanStack Query on the frontend, powered by a Node.js/Express + MongoDB backend. 
-
+A modern, responsive clothing e-commerce web application.
